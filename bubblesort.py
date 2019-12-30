@@ -1,4 +1,5 @@
 # Bubble sort
+# Douglas
 
 def bubble_sort(numbers):
     swapped = True
