@@ -5,14 +5,10 @@ class Grid:
     def __init__(self, cols, rows):
         self.cols = cols
         self.rows = rows
-        self.grid = grid = np.random.choice(a=[0, 1], size=(self.cols, self.rows))
+        self.grid = np.random.choice(a=[0, 1], size=(self.cols, self.rows))
 
     def print_grid(self):
         print(self.grid)
-
-    def state(self, x, y):
-        state = self.grid[x][y]
-        print(state)
 
     def evolve(self):
         x = 0
@@ -51,7 +47,6 @@ class Grid:
 if __name__ == "__main__":
     grid = Grid(5,5)
     grid.print_grid()
-    grid.state(0,0)
     grid.evolve()
     grid.print_grid()
     grid.evolve()
