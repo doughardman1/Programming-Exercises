@@ -28,4 +28,5 @@ for i in range(1000):
     areas.append(answer)
 
 plt.hist(areas, bins=10, ec='black')
+plt.xlabel('Areas')
 plt.show()
